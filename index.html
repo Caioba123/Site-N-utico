@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TNT NÁUTICO</title>
+  <link rel="icon" type="image/png" href="Screenshot 2025-04-19 22.06.22-Photoroom.png">
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img src="nautico.png" alt="Logo Náutico" class="logo"/>
+      <nav>
+        <ul>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#titulos">Títulos</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h1>Clube Náutico Capibaribe</h1>
+    <p class="subtitulo">O Orgulho de Pernambuco</p>
+
+  </section>
+
+  <section id="historia" class="section">
+    <h2>História do Náutico</h2>
+    <p>Oficialmente, o Clube Náutico Capibaribe foi fundado em 7 de abril de 1901. Na prática, porém, já existia desde 1898, quando dois grupos adversários de remadores recifenses decidiram unir forças, criando uma só sociedade. Em 1909, foi a vez de os alvirrubros entrarem em campo, estreando no futebol, esporte em que a instituição também se tornou tradicional, sobretudo com o vice-campeonato da Taça Brasil de 1967 e com o hexacampeonato pernambucano, entre 1963 e 1968.
+
+      A origem do clube remonta a 1897, quando um grupo de praticantes de remo participou da recepção das tropas pernambucanas que haviam lutado na Guerra de Canudos. No dia 21 de novembro daquele ano, os remadores, liderados por João Victor da Cruz Alfarra, realizaram uma grande regata no Rio Capibaribe. A competição chamou a atenção no Recife e, consequentemente, o remo tornou-se uma modalidade popular.
+      </p>
+      <br>
+    <img src="aflitos.png" alt="Estádio dos Aflitos" />
+<br>
+<br>
+    <section id="jogadores">
+      <h2>Jogadores Históricos</h2>
+      <div class="jogadores-container">
+          <div class="lista-jogadores">
+              <ul>
+                  <ul>
+                      <li onclick="mostrarJogador('Kuki')">Kuki</li>
+                      <li onclick="mostrarJogador('Bizu')">Bizu</li>
+                      <li onclick="mostrarJogador('Bita')">Bita</li>
+                      <li onclick="mostrarJogador('Ivan Brondi')">Ivan Brondi</li>
+                      <li onclick="mostrarJogador('KIeza')">Kieza</li>
+                  </ul>
+                  
+              </ul>
+          </div>
+  
+          <div class="jogador-detalhe">
+              <img id="imagemJogador" src="" alt="Imagem do Jogador">
+              <h3 id="nomeJogador"></h3>
+          </div>
+      </div>
+  </section>
+  
+  <script>
+    const jogadores = {
+        Kuki: {
+            nome: 'Sílvio Luiz Borba da Silva, mais conhecido como Kuki (Crateús, 30 de abril de 1971), é um ex-futebolista brasileiro que atua como auxiliar técnico no Náutico desde 2010, no qual é ídolo e é o terceiro maior artilheiro da história do clube',
+            imagem: 'kuki.png'
+        },
+        
+        Bizu: {
+            nome: 'Cláudio Tavares Gonçalves, mais conhecido como Bizu, (São Vicente, 18 de junho de 1960), é um ex-futebolista brasileiro que atuava como atacante. Jogando pelo Náutico, sagrou-se duas vezes vice-artilheiro do Brasil, em 1989 e 1990 e artilheiro dos Pernambucanos de 1989, com 31 gols , e 1990. Em 1990, foi o artilheiro da Copa do Brasil, com 7 gols na competição.',
+            imagem: 'bizu.png'
+        },
+        Bita: {
+            nome: 'Bita',
+            imagem: 'download (3).jpeg'
+        },
+        IvanBrondi: {
+            nome: 'Ivan Brondi',
+            imagem: 'download (4).jpeg'
+        },
+        Kieza: {
+            nome: 'Kieza',
+            imagem: 'download (5).jpeg'
+        }
+    };
+  
+    function mostrarJogador(id) {
+        const jogador = jogadores[id];
+        const imagem = document.getElementById('imagemJogador');
+        const nome = document.getElementById('nomeJogador');
+  
+        imagem.src = jogador.imagem;
+        imagem.style.display = 'block';
+        nome.textContent = jogador.nome;
+        nome.style.display = 'block';
+    }
+  </script>
+  
+  <br>
+  <br>
+  
+  <section id="titulos" class="section dark">
+    <h2>Principais Títulos do Náutico</h2>
+    <div class="titulos-grid">
+      <div class="titulo-card">
+        <img src="image.png" alt="Campeonato Pernambucano" />
+        <h3>Campeonato Pernambucano (24x)</h3>
+        <p>Último título: 2022</p>
+      </div>
+      <div class="titulo-card">
+        <img src="250px-CopadoNordeste2003.png" alt="Norte-Nordeste" />
+        <h3>Torneio Norte-Nordeste (1966)</h3>
+        <p>Título regional inédito na época</p>
+      </div>
+      <div class="titulo-card">
+        <img src="250px-BrasileiraoC2015-.png" alt="Série C" />
+        <h3>Campeonato Brasileiro Série C</h3>
+        <p>2019</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="noticias" class="section">
+    <h2>Últimas Notícias</h2>
+    <article class="noticia">
+      <img src="https://i.imgur.com/Xj8AvH0.jpg" alt="Treino" />
+      <div>
+        <h3>Náutico se prepara para o clássico contra o Sport</h3>
+        <p>O Timbu intensificou os treinamentos para o duelo decisivo do fim de semana. A expectativa é de casa cheia nos Aflitos.</p>
+      </div>
+    </article>
+    <article class="noticia">
+      <img src="https://i.imgur.com/ZJ4KO9m.jpg" alt="Torcida" />
+      <div>
+        <h3>Torcida Alvirrubra esgota ingressos em 3h</h3>
+        <p>A torcida do Náutico mostra mais uma vez sua paixão. Todos os ingressos para o próximo jogo foram vendidos em tempo recorde.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <p>© 2025 TNT Náutico PE BR</p>
+    <p>
+      <a href="https://www.instagram.com/tntnauticopebr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+</body>
+</html>

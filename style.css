@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #b30000;
+  padding: 15px 0;
+}
+
+header .container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+nav ul li {
+  margin-left: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.banner {
+  background-image: url('fundobranco.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  color: rgb(146, 0, 0);
+  padding-top: 100px;
+}
+
+.banner h1 {
+  font-size: 3em;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subtitulo {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #900;
+}
+
+
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #900;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.section img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.section.dark {
+  background: #fff3f3;
+}
+
+.titulos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.titulo-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.titulo-card img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.noticia {
+  display: flex;
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.noticia img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.noticia div {
+  padding: 20px;
+  flex: 1;
+}
+
+footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 30px 150px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+
+.jogadores-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.lista-jogadores {
+  text-align: left;
+}
+
+.lista-jogadores ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-jogadores li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lista-jogadores li:hover {
+  color: #b22222;
+  font-weight: bold;
+}
+
+.jogador-detalhe {
+  max-width: 300px;
+}
+
+.jogador-detalhe img {
+  max-width: 100%;
+  display: none;
+  border-radius: 8px;
+}
+
+.jogador-detalhe h3 {
+  display: none;
+  margin-top: 10px;
+}
